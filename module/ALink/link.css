@@ -1,0 +1,217 @@
+/*所有元素*/
+* { 
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;  
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url("font/iconfont.woff2") format('truetype');
+    font-display: block;
+}
+
+body {
+	background: url(../../img/link_bg.jpg);
+	background-size:1349px 816px;
+}
+
+#menu {
+	position: fixed;
+	top: 0px;
+	left: 124px;
+	background: #ffffff;
+	height: 66px;
+	width: calc(100% - 278px);
+	padding: 0px 15px;
+    border: 2px solid #eeeeee;
+    z-index: 200;
+}
+
+.menu {
+	font-size: 13px;
+	display: inline-block;
+	padding: 22px 10px;
+	cursor: pointer;
+}
+.menu:before {
+    font-family: "iconfont";
+    font-size: 15px;
+    height: auto;
+    content: "\E624";
+    color: #fb7299;
+    padding-right: 2px;
+}
+.menu0 {
+	padding-left: 28px;
+}
+.sou {
+	margin-left: 15px;
+	height: 30px;
+    width: 200px;
+    padding: 0 29px 0 10px;
+    line-height: 30px;
+    color: #222;
+    font-size: 12px;
+    border: 1px solid #ccd0d7;
+    border-radius: 15px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+.search-btn {
+	margin-left: -28px;
+    width: 18px;
+    height: 30px;
+    background-position: -1111px -81px;
+    cursor: pointer;
+	display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-image: url(img/icons.png);
+}
+.menu0:before {
+	display: inline-block;
+	position: absolute;
+	margin-top: -4px;
+	margin-left: -29px;
+	width: 25px;
+	height: 25px;
+	content: "";
+	background:url(../../img/xiaomai.jpg) no-repeat;
+	background-size:100% 100%;
+	border-radius: 20px;
+}
+.menu1:before {
+	content: "\E62D";
+    color: #fb7299;
+}
+.menu2:before {
+	content: "\E62C";
+    color: #02b5da;
+}
+.menu3:before {
+	content: "\E625";
+    color: #23c9ed;
+}
+.menu4:before {
+	content: "\E624";
+    color: #f3a034;
+}
+.menu5:before {
+	content: "\E62A";
+    color: #ff5d47;
+}
+.menu6:before {
+	content: "\E627";
+    color: #23c9ed;
+}
+.menu:hover,.menu-hover {
+	color: #00a1d6;
+	border-bottom:3px solid #00a1d6;
+}
+
+#main {
+	position: absolute;
+	top: 64px;
+	left: 124px;
+	background: rgba(204, 204, 204, 0.3);
+	margin-top: 64px;
+	min-height: 580px;
+	width: calc(100% - 258px);
+    margin: 0 auto;
+    border: 2px solid #eeeeee;
+    z-index: 100;
+	padding: 4px 5px;
+}
+
+.link {
+	display: inline-block;
+	width: 152.5px;
+	height: 66px;
+	margin: 5px 4px;
+	padding: 4px 8px;
+	background-color: rgba(255, 255, 255, 0.7);
+	float:left;
+	border-radius: 10px;
+	text-align: left;
+	word-wrap: break-word; 
+	word-break: normal;
+	font-size: 13px;
+	color:#222;
+	cursor: pointer;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	z-index: 200;
+}
+.link:hover {
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+	background-color: rgba(212, 203, 203, 0.5);
+	margin: 4px 3px;
+	padding: 5px 9px;
+	color: #00b33e;
+	border-radius: 0px;
+	z-index: 300;
+	transform:translateY(-2px);
+	border: 1px solid #e4ecf3;
+    box-shadow: 1px 1px 1px #f2f6f8;
+	font-size:20px;
+    
+    animation-name:mymove;
+	animation-duration:2s;	
+	/* Safari and Chrome */
+	-webkit-animation-name:mymove;
+	-webkit-animation-duration:1s;
+}
+@keyframes mymove
+{
+	from {
+		font-size:13px;
+		border-radius: 10px;
+		background-color: rgba(212, 203, 203, 0.5);
+		transform:translateY(0px);
+	}
+	to {
+		font-size:20px;
+		border-radius: 0px;
+		background-color: rgba(255, 255, 255, 0.8);
+		transform:translateY(-2px);
+	}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+	from {
+		font-size:13px;
+		border-radius: 10px;
+		background-color: rgba(212, 203, 203, 0.5);
+		transform:translateY(0px);
+	}
+	to {
+		font-size:20px;
+		border-radius: 0px;
+		background-color: rgba(255, 255, 255, 0.8);
+		transform:translateY(-4px);
+	}
+}
+
+
+
+#funcButton {
+	position: fixed;
+	bottom : 10%;
+	left : 90.9%;
+}
+
+#funcButton .func {
+	display: inline-block;
+	padding: 15px 16px;
+    color: #473C8B;
+    font-size: 15px;
+    background-color: rgba(208, 240, 247, 0.8);
+    cursor: pointer;	
+}
+
+#funcButton .func:hover {
+	color: red;
+	background-color: rgba(208, 240, 247, 1);
+}
