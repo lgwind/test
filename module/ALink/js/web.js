@@ -179,7 +179,7 @@ web.find = function(word, find) {
  * 获取链接的ip和端口
  */
 web.getUrlIp = function(isAdd) {
-	var ip = window.location.origin;
+	var ip = window.location.origin+'/test';
 	if(ip=="file://") {
 		ip = 'file:///E:/lgwind/Myweb/Myweb';
 		if(isAdd) {
