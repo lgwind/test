@@ -517,7 +517,7 @@ var Button = [
 /*lgwind*/
 
 var friendLink = [
-	'link','{ip}/test/module/ALink/link.html',
+	'link','{ip}/module/ALink/link.html',
     //'link','{ip}/link.html',
 	'bilibili#', 'https://space.bilibili.com/17347104/bangumi',
 	'sgsGame#', 'https://web.sanguosha.com/login/index.html',
