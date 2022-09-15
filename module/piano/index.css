@@ -1,0 +1,434 @@
+/*所有元素*/
+* { 
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;  
+}
+
+#tMain {
+	position:absolute;
+	width: calc(81.48% - 2px);
+	left: calc(9% - 1px);
+	top : calc(9% - 46px);
+    height: 40px;
+    line-height: 40px;
+    background: #000;
+    box-shadow: inset 0 -1px 2px hsla(0,0%,100%,.4), 0 2px 3px rgba(0,0,0,.4);
+    border-color: #555 #222 #111 #777;
+    border-style: solid;
+    border-width: 3px 2px 2px;
+    z-index: 100;
+    color : #dbd8d8;
+    text-align: center;
+}
+
+#main, #sMain {
+	position:absolute;
+	width: 82%;
+	left: 9%;
+	top: 9%;
+    z-index: 100;
+}
+
+.whiteBtn {
+	display: inline-block;
+    position: relative;
+	width: calc(2.76% - 2px);
+	height: 217.778px;
+	max-height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    background: linear-gradient(-30deg,#f5f5f5,#fff);
+    box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff, inset 1px 0 0 #fff, inset -1px 0 0 #fff, 0 4px 3px rgba(0,0,0,.7);
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    text-align: center;
+    vertical-align: bottom;
+    cursor: pointer;
+    z-index: 200;
+}
+.whiteBtn:hover {
+    border-radius: 0 0 0px 0px;
+    border: 1px solid #FFEBCD;
+    box-shadow: inset 0 2px 0 #FFEBCD, inset 0 -2px 0 #FFEBCD, inset 2px 0 0 #FFEBCD, inset -2px 0 0 #FFEBCD, 0 4px 3px rgba(0,0,0,.7);	
+}
+
+.whiteBtn span {
+	display: block;
+    position: relative;
+	top: 69%;
+	user-select: none;
+}
+
+.blackBtn {
+	display: inline-block;
+    position: absolute;
+	width: calc(1.99% - 3px);
+	height: 139.66px;
+	/*max-height: 35%;*/
+    background: linear-gradient(-20deg,#333,#000,#333);
+    border-color: #666 #222 #111 #555;
+    border-style: solid;
+    border-width: 1px 2px 7px;
+    border-radius: 0 0 2px 2px;
+    box-shadow: inset 0 -1px 2px hsla(0,0%,100%,.4), 0 2px 3px rgba(0,0,0,.4);
+    top: 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    z-index: 300;
+}
+
+.blackBtn:hover {
+	box-shadow: inset 0 0 7px 0 #87cefa;
+}
+
+.blackBtn span {
+	color : #fff;
+	display: block;
+    position: relative;
+	top: 71%;
+	font-size: 6px;
+	user-select: none;
+}
+
+#music #listTitle, #lyric, #create {
+	position: absolute;
+	top : 48%;
+	left: 9%;
+	height: 6%;
+	width: 20%;	
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(-30deg,#f5f5f5,#fff);
+    padding: 0px 20px;
+}
+
+#music #listTitle span {
+	display: inline-block;
+	line-height:100%;
+	height : 100%;
+    font-size: 24px;
+	margin-left: 10px;
+	margin-top: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#music #list {
+	position: absolute;
+	top : 55%;
+	left: 9%;
+	height: 35%;
+	width: 20%;
+    background: linear-gradient(-30deg,#f5f5f5,#fff);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.scrollBar {	
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.scrollBar::-webkit-scrollbar{
+  	background-color: #E9E9E9;
+   	width: 8px;
+}
+.scrollBar::-webkit-scrollbar-thumb{
+	background-color: #b3d2e4;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.scrollBar::-webkit-scrollbar-track-piece{
+  	/*background-color: red;*/
+  	background-color: #f1f1f1;
+  	-webkit-border-radius: 2em;
+  	-moz-border-radius: 2em;
+  	border-radius: 2em;
+}
+
+#music #list .music {
+    cursor: pointer;
+}
+
+#music #list .num {
+	display: inline-block;    
+    width: 35px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: -15px;
+    text-align: center;
+    color: #ff5252;
+}
+
+#music #list .name {  
+	display: inline-block;
+    height: 30px;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#music #list .name:hover {
+	color: cornflowerblue;
+}
+
+#mBtn {	
+	position: absolute;
+	top : 48%;
+	left: 55%;
+}
+
+#lyric {
+	left: 33%;
+    overflow-y: auto;
+    /*overflow-x: scroll;*/
+    margin-left: 4px;
+    padding : 6px 15px;
+	height: 43.33%;
+	width: 18%;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+#lyric span {
+	display: inline-block;	
+}
+
+.scoreWord {
+	min-width: 16px;
+	height : 28px;
+	text-align: center;
+}
+.scoreWord2 {
+	/*min-width: 10px;*/
+	height : 28px;
+	text-align: center;
+}
+.scoreWordL{
+	/*min-width: 14px;*/
+	height : 28px;
+	text-align: center;
+	margin-left: 3px;
+}
+.scoreWordR{
+	/*min-width: 19px;*/
+	height : 28px;
+	text-align: center;
+	margin-right: 3px;
+}
+.hasBlace {
+	height : 28px;
+	text-align: center;
+	margin-left: 5.5px;
+}
+
+.scoreLeftTop {	
+	position : absolute;
+	margin-left : -6px;
+	font-size: 6px;
+}
+.scoreBottom {
+	position : absolute;
+	margin-left : -10.5px;
+	margin-top: 18px;
+	font-size: 6px;	
+	height: 1px;
+	width: 12px;
+	border-bottom: 1px solid green;
+}
+.scoreBottom2 {
+	position : absolute;
+	margin-left : -10.5px;
+	margin-top: 19px;
+	font-size: 6px;	
+	height: 1px;
+	width: 12px;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+	
+}
+.scoreAdd {
+	position : absolute;
+	margin-left : -5px;
+	margin-top: 0px;
+	font-size: 6px;	
+	height: 1px;
+	width: 2px;
+	border-top: 2px solid red;	
+}
+.scoreAdd2 {
+	position : absolute;
+	margin-left : -5px;
+	margin-top: -3px;
+	font-size: 6px;	
+	height: 1px;
+	width: 2px;
+	border-top: 2px solid red;	
+	border-bottom: 2px solid red;	
+}
+.scoreAdd3 {
+	position : absolute;
+	margin-left : -5px;
+	margin-top: -3px;
+	font-size: 6px;	
+	height: 1px;
+	width: 2px;
+	border-top: 2px solid red;	
+	border-bottom: 2px solid red;
+}
+.scoreSub {
+	position : absolute;
+	margin-left : -5px;
+	margin-top: 21px;
+	font-size: 6px;	
+	height: 1px;
+	width: 2px;
+	border-top: 2px solid blue;
+}
+.scoreSub2 {
+	position : absolute;
+	margin-left : -5px;
+	margin-top: 21px;
+	font-size: 6px;	
+	height: 1px;
+	width: 2px;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+}
+.scoreSub3 {
+	position : absolute;
+	margin-left : -5px;
+	margin-top: 21px;
+	font-size: 6px;	
+	height: 1px;
+	width: 2px;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+}
+.scoreSpilt {
+	padding: 0px 5px;
+}
+.scoreSpot {
+	position : absolute;
+	margin-left : 16px;
+	font-size: 6px;
+}
+
+
+#create {
+	top : 71%;
+	left: 55%;
+	width: 25.45%;
+    margin-left: 4px;
+    padding : 6px 15px;	
+    height : auto;
+    min-height: 135px;
+    /*height : 20.45%;*/
+	word-wrap: break-word;
+	word-break: break-all;
+    overflow-y: auto;
+    font-size: 14px;
+    /*overflow-x: scroll;*/
+}
+
+#exeCreate {
+	position: absolute;
+	top : 70.5%;
+	left: 83.1%;
+	/*width: 5%;*/
+	width : auto;
+    padding : 50px 15px;	
+    /*height : 7.32%;*/	
+    height : auto;
+    min-height: 46px;
+    max-height: 135px;
+}
+
+.mBtn {
+	display: inline-block;
+	/*height: 30px;*/
+	width: 133px;	
+	max-width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(-30deg,#f5f5f5,#fff);
+    font-size: 30px;
+    padding: 20px 10px 20px 10px;
+    margin: 4px;
+    text-align: center;
+    cursor:pointer;
+	user-select: none;
+	color : #666;
+}
+
+.mBtn:hover, .mLBtn span:hover {
+	color : #b53939 !important;
+}
+
+.mLBtn {
+	display: block;
+	height: 16px;
+	width: 100%;	
+    font-size: 16px;
+}
+.mLBtn span {
+	margin-left: 3px;
+	margin-right: 20px;
+    cursor:pointer;
+	/*user-select: none;*/
+}
+
+.mLBtn .volume {
+	margin-right: 4px;	
+}
+.mLBtn meter {
+	display: inline-block;
+	width: 110.8px;
+	height: 8px;	
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background: #FFF;
+	cursor: pointer;
+	user-select: none;
+}
+
+.mLBtn meter::-webkit-meter-optimum-value {
+	background: linear-gradient(to bottom, #FFD700, #FFA500);
+}
+/*meter::-webkit-meter-bar {
+background: #FFF;
+}
+meter::-webkit-meter-optimum-value {
+background: linear-gradient(to bottom, #62c462, #51a351);
+}
+meter::-webkit-meter-suboptimum-value {
+background: linear-gradient(to bottom, #fbb450, #f89406);
+}
+meter::-webkit-meter-even-less-good-value {
+background: linear-gradient(to bottom, #ee5f5b, #bd362f);
+}*/
+
+#musicTime {
+	display: block;
+	margin-top: 10px;
+	margin-left: 3px;
+	width:483px;
+	height: 6px;
+	cursor: pointer;
+}
+
+#time, #mName {
+	display: inline-block;
+	font-size: 12px;
+	color : #aaa;
+}
+
+#mName {
+	float : right;
+	margin-right: 2px;
+}
