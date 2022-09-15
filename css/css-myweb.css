@@ -1,0 +1,258 @@
+/*所有元素*/
+* { 
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;  
+}
+body {
+	background:url(../img/img-myweb13.jpg) no-repeat;
+	background-size:100% 150%;
+	overflow: hidden;
+	min-height: 503px;
+}
+
+video {
+	position: absolute;
+	top: -25px;
+	left: 0px;
+	width: 100%;
+}
+
+
+#copy {
+	position: absolute;
+	/*width: 100px;*/
+	top: 5%;
+	right: 13.6%;
+	font-size: 22px;
+	text-align: right;
+	color: #ffffff;
+	display: block;
+	cursor: pointer;
+	z-index: 199;
+}
+
+#copy ul{
+	margin-top: -1000px;
+	font-size: 16px;
+	/*color: #ffffff;*/
+}
+#copy ul li{
+	padding: 6px 12px 6px 12px;
+	margin-right: -12px;
+	max-width: 1000px;
+	/*width: 100px;*/
+	list-style:none;
+}
+#copy ul li:hover{
+	background: #D0F0F7;
+	color: red;
+}
+
+#copy:hover ul {
+    margin-top: -2px;
+}
+
+#search {
+	/*background: red;*/
+	width: 950px;	
+	height: 200px;
+	padding-top:10%;
+	padding-bottom:10% ;
+	margin:0 auto;
+}
+
+#title {	
+	text-align: center;
+	padding:50px 20px 34px 0px;
+	color:#ffffff;
+	font-size:24px;
+	filter:alpha(Opacity=90);-moz-opacity:0.9;opacity: 0.9;
+}
+
+#son {
+	display: none;
+	position: absolute;
+	left : calc(50% - 550px);
+	top: 0px;
+	width: 1100px;
+	height: calc(100% - 4px);
+	z-index: 200;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+#note, .btnImg {
+	position: absolute;
+	top:5px;
+	left:5px;
+	width: 40px;
+	height: 40px;
+	background-image : url(../img/记事本.gif);
+	background-size: 40px 40px;
+	cursor: pointer;
+	filter:brightness(100%);
+}
+
+#sonShow {
+	background-image : url(../img/look.jpeg);
+	background-size: 38px 38px;
+	width: 38px;
+	height: 38px;
+	border-radius: 5px;
+	top:41px;
+	left:calc(50% - 550px + 1104px);
+}
+#sonWeb {
+	background-image : url(../img/rarrow.gif);
+	background-size: 35px 35px;
+	border-radius: 5px;
+	left:calc(50% - 550px + 1106px);
+	width: 35px;
+	height: 35px;
+}
+.friendLink {
+	position: absolute;
+	cursor: pointer;
+	filter:brightness(100%);
+	/*background-color: #ddd;*/
+	/*background-image : url(../img/bilibili.jpg);*/
+	background-size: 38px 38px;
+	border-radius: 100px;
+	top:5px;
+	left: 48px;
+	width: 38px;
+	height: 38px;
+	opacity: 0.9;
+	text-align: center;
+	vertical-align: center;
+	color: #eee;
+	font-size: 14px;
+}
+.friendLink:hover, .btnImg:hover, #note:hover {
+	box-shadow: red 0px 0px 10px 1px;
+}
+#noteText {
+	display: block;
+    position: absolute;
+    height: 191px;
+    width: 327px;
+    color: #ddd;
+    background: #000000;
+    z-index: 950;
+    padding: 4px 4px 5px 5px;
+    overflow-y: scroll;
+    border: 2px solid #4f2121;
+    opacity: 0.8;
+	font-size: 14px;
+	top: 45px;
+	left: 5px;
+	width: 192px;
+	height: 400px;
+}
+
+#noteText::-webkit-scrollbar {
+   width: 8px;
+}
+#noteText::-webkit-scrollbar-thumb {
+  background-color: #38444b;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+#noteText::-webkit-scrollbar-track-piece {
+  background-color: #191919;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+
+h1 {
+	cursor:pointer;
+}
+
+.search-input {
+	height:62px;
+	width: 546px;
+	padding-left:20px;
+	border: 2px solid #c2cbd7;
+	font-size: 30px;
+}
+
+.search-button-big {
+	height:66px;
+	padding: 0px 20px;
+	border: 1px solid #c2cbd7;
+	font-size: 30px;
+	cursor:pointer;
+	background-color : #f4f9ff;
+}
+.search-button-little {
+	padding:8px 14.5px 8px 14.5px;
+	border: 1px solid #c2cbd7;
+	cursor:pointer;
+	background-color : #f4f9ff;
+}
+
+input {	
+	z-index: 800;
+	filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7;
+	display: inline-block;
+}
+
+input[type='button']:hover{	
+	color:#fff;
+	background-color : #000;
+	border: 1px solid #000;
+	/*filter:alpha(Opacity=100);-moz-opacity:1;opacity: 1;*/
+}
+
+/*手机端样式设置*/
+@media all and (orientation : portrait) {
+	html {
+		width: 900px;
+		height: 500px;
+	}
+	
+	body {
+		background:none;
+		background-size:250% 375%;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#search {
+		width:100%;
+	}
+	
+	#search input {
+		font-size: 70px;
+		min-height: 90px;
+	}
+	#search_input {
+		display: block;
+		height: 150px;
+	}
+	
+	#copy, #note, .friendLink, #noteText, .btnImg {
+		display : none;
+	}
+	
+	#son {
+		display: none;
+		position: absolute;
+		left : calc(50% - 100px);
+		top: 0px;
+		width: calc(100% - 200px);
+	}
+	
+	.search-button-little {
+		font-size:26px;
+	}
+	
+	#copy, #copy ul {
+		display:none;
+		visible:hidden;
+	}
+}

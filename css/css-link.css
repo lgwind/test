@@ -1,0 +1,51 @@
+body {
+	background:url(../img/link_bg.jpg);
+}
+
+#link {
+	width: 80%;
+	margin: auto;
+}
+.link-park {	
+	display: block;
+	width:10%;
+	float:left;
+}
+
+.link-span a{
+	display: block;
+	padding: 15px 20px 15px 20px ;
+	color:#473C8B;
+	background-color: rgba(205, 38, 38, 0.2);
+	float: top;
+	margin: 2px;
+	/*text-decoration: none;*/
+	cursor: pointer;
+	text-align: center;    
+	word-wrap: break-word;
+}
+
+.link-span a:hover {
+	color:red;
+	background:#D0F0F7;
+}
+
+#funcButton {
+	position: fixed;
+	bottom : 10%;
+	left : 89.5%;
+}
+
+#funcButton .func {
+	display: inline-block;
+	padding: 15px 16px;
+    color: #473C8B;
+    font-size: 15px;
+    background-color: rgba(208, 240, 247, 0.8);
+    cursor: pointer;	
+}
+
+#funcButton .func:hover {
+	color: red;
+	background-color: rgba(208, 240, 247, 1);
+}
