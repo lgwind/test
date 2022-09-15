@@ -440,7 +440,7 @@ var Link = [
  * 搜索按钮变量
  *//*lgwind*/
 var Button = [
-    'Translation', 'http://dict.youdao.com/w/{search}/#keyfrom=dict.top',
+    'Translation', 'https://dict.youdao.com/w/{search}/#keyfrom=dict.top',
 	'Baidu#ba$', 'https://www.baidu.com/s?wd={search}',
     '360搜索#360','https://www.so.com/s?q={search}',
     'Bing搜索#bi','https://cn.bing.com/search?q={search}',
