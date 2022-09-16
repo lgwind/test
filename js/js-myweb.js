@@ -420,7 +420,7 @@ web.changeBodyImg = function(isSub) {
 		web.imgNum = 0;
 	}
 	var imgName = web.img[web.imgNum];
-	$('body').css('background-image', 'url(../Myweb/img/'+imgName+'.jpg)');
+	$('body').css('background-image', 'url(./Myweb/img/'+imgName+'.jpg)');
 };
 
 /**
